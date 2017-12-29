@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>三围秀</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta name="description" content="三围秀分享"/>
+    <meta name="keywords" content="三围秀分享"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="browsermode" content="application"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!--禁止浏览器自己把页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--把苹果手机浏览器中的菜单栏工具栏隐藏-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content="三围秀分享">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style type="text/css">
+        /*--css hack--*/
+        * { margin: 0; padding: 0; font-family: 'PingFangSC-Regular','微软雅黑', 'Arial', sans-serif; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+        body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {margin: 0;padding: 0;}
+        img {border-style: none;pointer-events: none;}
+        html{font-size: 100px;}
+        ul,li{list-style: none;}
+        html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
+        body {background-color: #ffffff;margin: 0;overflow: hidden;}
+        a {text-decoration: none;}
+        /*-------------------*/
+        code{color: #f3c00f;}
+        .wrap{width: 100%;height: 100%;overflow: auto;}
+        .imgBox,.btn_box{width: 3.3rem;height: auto;margin: 0 auto;overflow: hidden;}
+        .btn_box{line-height: 0.32rem;margin-top: 0.15rem;overflow: hidden;margin-bottom: 0.15rem;}
+        .imgBox img{width: 33%;height: auto;vertical-align: top;margin-top: 0.15rem;border: none;float: left;}
+        .span_style{padding: 0.05rem;line-height: .32rem;font-size: 0.18rem;background: #f3c00f;border-radius: 0.05rem;}
+        .p_style{line-height: 0.3rem;font-size: .18rem;color: #000000;margin: 0 0.15rem;border-radius: 0.05rem;padding:0.05rem 0.1rem;}
+    </style>
+    <script type="text/javascript">
+        var deviceWidth;
+        function getScale() {
+            //设置压缩比
+            deviceWidth = document.documentElement.clientWidth >= 720 ? 720 : document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = (deviceWidth / 3.6) + 'px';
+        }
+        getScale();
+        window.addEventListener("resize", function () {
+            getScale();
+        }, false);
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <p class="p_style" style="text-align: center;font-weight:bold;">三围秀分享</p>
+    <p class="p_style" style="font-size: 0.14rem;background: #dddddd;">三围秀APP配套的产品分享H5，可展示18图、36图、72图等产品。H5载入APP提供的完整套图，通过数值循环控制每次显示的图片，达到切换效果。同时提供<code>双指缩放功能</code> 、<code>滑动切换功能</code>、<code>自动切换功能</code>以及<code>热点图切换</code>,并对缩放后的图片做了滑动查看并<code>设置了边界</code>。并且根据后台提供的评论数据，将评论与每张套图对应显示,达到<code>跟随评论</code>的功能。</p>
+    <div class="imgBox">
+        <img src="img/shejitu1.png" alt="">
+        <img src="img/shejitu2.png" alt="">
+        <img src="img/shejitu3.png" alt="">
+    </div>
+    <div class="btn_box">
+        <span onclick="javascript:window.location.href='./new.html'" class="span_style" style="float: left;">线上模版</span>
+        <span onclick="javascript:window.location.href='./old.html'" class="span_style" style="float: right;">最初模版</span>
+    </div>
+</div>
+</body>
+</html>

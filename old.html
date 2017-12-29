@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>vrMaker-40</title>
+    <link rel="stylesheet" href="css/old.css">
+</head>
+<body>
+<ul class="statistic-show-container" id="statistic-show-container">
+    <li class="section zIndex">
+        <div class="nav" id="arrow"></div>
+        <div id="product1" class="img_360_box product1">
+            <div class="img-360"></div>
+        </div>
+        <div id="product2"  class="img_360_box product2">
+            <div class="img-360"></div>
+        </div>
+        <div id="img_desc1" class="img_desc1"></div>
+        <div class="img_desc2"></div>
+        <div class="goods_buy">
+            <div class="goods_name"></div>
+            <div class="goods_buy_info">
+                <div class="goods_buy_left">
+                    <div class="goods_buy_left_1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="next-page-icon animated-infinite"></div>
+        <div class="swx-barrage close"></div>
+        <div class="swx-hot-spots off"></div>
+        <div class="swx-pic-play play"></div>
+        <!--弹幕部分-->
+        <div class="zpg-barrage-container" style="display:none;">
+            <div class="zpg-barrage-content clear" id="J_barrage_stage"></div>
+        </div>
+    </li>
+
+    <!--商品介绍部分-->
+    <li class="section">
+        <!--商品详情部分-->
+        <div class="statistics-commodity-detail-table"></div>
+        <!--加入购物车部分-->
+        <div class="statistics-goods-buy clear">
+            <div  class="now-buy-txt" >
+                <a href="https://item.jd.com/10645515400.html">去购买</a>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<!--遮罩部分-->
+<div class="swx-hint-layer">
+    <div class="swx-hint-con">
+        <p class="hint-img-box">
+            <div class="hint-change-icon left-right-icon"></div>
+        </p>
+        <span class="swx-hint-txt">可手动左右滑动</span>
+    </div>
+</div>
+<!--音乐部分-->
+<div class="zpg-other-container">
+    <div class="swx-music pause" id="music-pic"></div>
+    <audio id="audio" src="img/bg.mp3"
+           style="opacity:0" preload="auto" controls loop hidden="true"/>
+</div>
+</body>
+</html>
+<script src='https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js'></script>
+<script src="js/old.js"></script>
